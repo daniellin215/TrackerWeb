@@ -1,17 +1,16 @@
-DROP TABLE IF EXISTS user_data;
+DROP TABLE IF EXISTS user_exercises;
 
-CREATE TABLE user_data (
+CREATE TABLE user_exercises (
   id SERIAL PRIMARY KEY,
-  username text, 
-  activity text, 
-  type text, 
-  setname text,
-  setnum integer,
-  set11time interval, 
-  set12time interval, 
-  set13time interval, 
-  set14time interval, 
-  set15time interval,
+  username text NOT NULL, 
+  activity text NOT NULL,  
+  setname text NOT NULL,
+  setnum integer NOT NULL,
+  set11time interval NOT NULL 
+  -- set12time interval, 
+  -- set13time interval, 
+  -- set14time interval, 
+  -- set15time interval,
 )
 
 -- create TABLE set_data (
